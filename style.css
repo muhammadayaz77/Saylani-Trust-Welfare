@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pre-head{
+    margin: 2px 0;
+    background-color: #EEEEEE;
+    min-height: 30px;
+}
+.first-con p{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.7;
+
+}
+.first-con i{
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+.first-con div{
+    max-height: 20px;
+    margin-right: 20px;
+
+}
+.pre-head .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-con{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    align-items: center;
+    padding-bottom: 6px;
+}
+.second-con #sel{
+    padding: 2px 8px;
+    border: 1px solid beige;
+}
+.Header #img1{
+    width: 200px;
+    height: 60px;
+}
+.nav-item .nav-link{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.Header .btn{
+    padding: 10px 25px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+.Header .btn1{
+    background-color: #0D6DB7;
+    color: white;
+}
+.Header .btn1:hover{
+    background-color: #0D6DB7;
+    color: white;
+}
+.Header .btn2{
+    background-color: #8DC63F;
+    color: white;
+}
+.Header .btn2:hover{
+    background-color: #8DC63F;
+    color: white;
+}
+.navbar-nav .nav-item{
+    margin-left: 5px;
+}
+.Header{
+    box-shadow: 0px 1px 4px rgb(216, 216, 216);
+}
+.hero h1{
+    font-size: 40px;
+    font-weight: 700;
+    /* font-style: bold; */
+    opacity: 0.9;
+}
+
+.hero h3{
+    font-size: 27px;
+    font-weight: 600;
+}
+.hero p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
+/* Color used your own to help for advance */
+:root{
+    --primary-color:#ab2c48;
+    --secondary-color:#43121d;
+    --third-color:#f98169;
+    --text-color:#555;
+    --text-grey:#999;
+    --primary-font:'Roboto','sans-serif';
+    --secondary-font:'Quicksand','sans-serif';
+}
+
+/* Header and Para Style in advance  */
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+h4{
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    line-height: 0.5rem;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    line-height: 0.5rem;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+/* Used all Media as per Required */
+@media screen and (max-width:350px) {
+    .first-con p{
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        opacity: 0.7;
+    
+    }
+    .first-con div:first-child{
+        margin-bottom: 5px;
+        display: none;
+    }
+}
+
+
+/* To apply Opacity on background */
+
+/* .hero{
+    position: relative;
+    min-height: 650px;
+background-color: rgb(255, 247, 247); 
+
+}
+.hero::before{
+    background: url('./Image/WhatsApp\ Image\ 2024-04-06\ at\ 1.55.22\ PM\ \(1\).jpeg') no-repeat center center/cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.5;
+} */
+/* -------------()-------------- */
