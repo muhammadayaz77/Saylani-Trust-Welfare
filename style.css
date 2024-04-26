@@ -79,6 +79,17 @@
 }
 .Header{
     box-shadow: 0px 1px 4px rgb(216, 216, 216);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+.Header #navbarSupportedContent{
+    text-align: center;
+}
+.Header #navbarSupportedContent:focus{
+    outline: unset;
+    border: unset;
 }
 .hero h1{
     font-size: 40px;
@@ -95,10 +106,73 @@
     font-size: 18px;
     font-weight: 400;
 }
+.hero .btn3{
+    border: 1px solid rgb(32, 32, 32);
+    font-size: 13px;
+    padding: 17px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .btn3:hover{
+    border: 1px solid rgb(32, 32, 32);
+    font-size: 13px;
+    padding: 17px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
-
-
+/* .hero .span{
+    position: relative;
+}
+.hero .span::before{
+    content: "Educations, and Vocational Trainings";
+    color: #0D6DB7;
+    animation: words   20s infinite, typing 20s steps(14) infinite;
+    
+}
+.hero .span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 55%;
+    background-color: #ffffff;
+    border-right: 5px solid  #0D6DB7;
+    animation: cursor .8s infinite;
+}
+@keyframes cursor{
+    to{
+        border-right: 5px solid #ffffff;
+    }
+}
+@keyframes words{
+    0%,20%{
+        content: "Educations, and Vocational Trainings";
+    }
+    21%,40%{
+        content: "healthcare and lot more...";
+    }
+    41%,60%{
+        content: "Educatfufjy  tyteyet dytyteyyt";
+    }
+    61%,80%{
+        content: "Educations, ";
+    }
+    81%,100%{
+        content: "Educations, dfgfghfhg  ryrtyt ertr";
+    }
+}
+@keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+ */
 /* Color used your own to help for advance */
 :root{
     --primary-color:#ab2c48;
@@ -121,7 +195,7 @@ h2{
     font-size: 2.25rem;
     font-weight: 700;
     color: var(--secondary-color);
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     text-transform: capitalize;
     line-height: 3rem;
 }
@@ -144,8 +218,8 @@ h5{
 p{
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.75rem;
-    letter-spacing: 1px;
+    /* line-height: 1.75rem; */
+    /* letter-spacing: 1px; */
     color: var(--text-color);
 }
 /* Used all Media as per Required */
@@ -162,22 +236,410 @@ p{
         display: none;
     }
 }
+/* Hero Section */
+@media screen and (max-width:992px)
+{
+    p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:767px)
+{
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+        /* font-style: bold; */
+        opacity: 0.9;
+    }
+    
+    h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .hero p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .hero .btn3{
+        border: 1px solid rgb(32, 32, 32);
+        font-size: 13px;
+        padding: 12px 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:576px)
+{
+    .hero #hero-img{
+        display: none;
+    }
+}
+
+/* General Section */
+
+.General .genInput{
+    background-color: #424242;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    height: 50px;
+}
+.General span{
+    /* margin: 5px; */
+    padding: 10px 5px;
+}
+.General #input1{
+    height: 50px;
+    width: 190px;
+    padding-left: 10px;
+}
+.General #input1:focus{
+    outline: unset;
+}
+.General .btn{
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.General .container{
+    background-color: #F0FCDB;
+}
+.General #quick{
+    background-color: #8DC63F;
+    color: white;
+}
+@media screen and (max-width:992px) {
+    .General #input1{
+        height: 50px;
+        width: 85%;
+    
+    }
+}
+@media screen and (max-width:992px) {
+    .General #input1{
+        height: 50px;
+        width: 85%;
+    
+    }
+}
+@media screen and (max-width:767px) {
+    .General #input1{
+        height: 50px;
+        width: 80%;
+    
+    }
+}
+@media screen and (max-width:471px) {
+    .General #input1{
+        height: 50px;
+        width: 75%;
+    
+    }
+}
+@media screen and (max-width:397px) {
+    .General #input1{
+        height: 50px;
+        width: 70%;
+    
+    }
+}
+
+/* Services Sections */
+.services h2{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.services h3{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.services .ser-con{
+    background-color: #F0FCDB;
+}
+
+.services img{
+    height:70px;
+    width: 70px;
+}
 
 
-/* To apply Opacity on background */
-
-/* .hero{
+/* Facility Section */
+.facility .card{
     position: relative;
-    min-height: 650px;
-background-color: rgb(255, 247, 247); 
+    background-color: black;
+    color: white;
+}
+.facility .text{
+    position: absolute;
+    bottom: 0;
+    padding: 6px;
+}
+.facility .btn5{
+    border: unset;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #8DC63F;
+    color: white;
+    width: 100%;
+    opacity: 1;
+    transition: 0.30s ease-in-out;
+}
+.facility .img-fluid{
+    opacity: 0.5 ;
+    transition: 0.30s ease-in-out;
 
 }
-.hero::before{
-    background: url('./Image/WhatsApp\ Image\ 2024-04-06\ at\ 1.55.22\ PM\ \(1\).jpeg') no-repeat center center/cover;
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
+.facility .card:hover .btn5{
     opacity: 0.5;
-} */
-/* -------------()-------------- */
+}
+.facility .card:hover .img-fluid{
+    opacity: 0.7;
+}
+.facility h3{
+    font-size: 20px;
+}
+.facility .card:hover h3{
+    transition: 0.30s ease-in-out;
+    opacity: 0.7;
+}
+
+/* Other Projects */
+
+.Other-projects .content{
+    display: flex;
+}
+.Other-projects .content .img-fluid1{
+    display: inline-block;
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 130px;
+    max-height: 50px;
+}
+.Other-projects .content .img-extra{
+    display: inline-block;
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100px;
+    height: 55px;
+}
+.Other-projects .content h3{
+    font-size: 20px;
+    color: #0D6DB7;
+    font-weight: 600;
+}
+.Other-projects p{
+    font-size: 15px;
+}
+.Other-projects h2{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+/* Blue Section */
+
+.blue .container{
+    background-color: #0D6DB7;
+}
+.blue img{
+    height: 60px;
+    width: 60px;
+    /* padding: 20px; */
+    background-color: white;
+    
+}
+.blue .img-b{
+    background-color: white;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blue h2{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.blue p{
+    color:white;
+}
+.carousel-item{
+    width: 100%;
+    height: 400px;
+    background-color: #EEEEEE;
+}
+#content p{
+    color:#8DC63F;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+#content h2{
+    font-family: sans-serif;
+    font-weight: 600;
+
+}
+.carousel-inner #c-img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.carousel-inner h5{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #0D6DB7;
+    margin-top: 10px;
+}
+/* Updates Section */
+
+.updates .card{
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid lavender;
+}
+.updates .img-fluid{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0.7;
+}
+.updates h2{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.updates h3{
+    font-size: 20px;
+}
+.updates .content{
+    background-color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.updates .card:hover .img-fluid{
+    opacity: 1;
+}
+
+/* News Section */
+
+#news h2{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+}
+#news .badge{
+    background-color: #8DC63F;
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+#news .card-text{
+    font-weight: 600;
+    color: black;
+}
+#news #btn{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 1px 15px;
+    border-radius: 5px;
+}
+#news .card{
+    background-color: #EEEEEE;
+    
+}
+
+/* Guide Section */
+
+#guide .row{
+    background-color: #0D6DB7;
+    color: white;
+}
+#guide h2{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#guide #input{
+    padding: 20px;
+    border: unset;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+#guide #input:focus{
+    outline: unset;
+    background-color: transparent;
+
+}
+
+#guide #btn{
+    padding: 20px;
+    border: unset;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.footer{
+    background-color: #424242;
+    color: white;
+}
+.footer p{
+    color: white;
+    font-size: 17px;
+}
+.footer #say-logo{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 320px;
+    height: 90px;
+}
+.footer #twitter{
+    margin-left: 6px;
+    margin-top: 30px;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+}
+.footer h2{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+@media screen and (max-width:992px){
+    .footer #twitter{
+        margin-left: 6px;
+        margin-top: 30px;
+        width: 40px;
+        height: 30px;
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width:600px){
+    .footer #say-logo{
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 200px;
+        height: 70px;
+    }
+    .footer p{
+        color: white;
+        font-size: 15px;
+    }
+}
