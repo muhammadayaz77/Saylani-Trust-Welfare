@@ -27,11 +27,11 @@ The Saylani Home Page is a simple static website that showcases the services, mi
 
 To run the website locally, follow these steps:
 
-1. Clone this repository to your local machine using `git clone https://github.com/your-username/saylani-homepage.git`.
+1. Clone this repository to your local machine using `https://github.com/muhammadayaz77/Saylani-Trust-Welfare.git`.
 2. Navigate to the project directory.
 3. Open `index.html` file in your web browser.
 
-Alternatively, you can [https://muhammadayaz77.github.io/Saylani-Trust-Welfare/](#) .
+Alternatively, you can [https://muhammadayaz77.github.io/Saylani-Trust-Welfare/] .
 
 ## Usage
 
